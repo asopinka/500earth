@@ -1,0 +1,189 @@
+html,
+body,
+section.main {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #555;
+}
+* {
+  -webkit-user-select: none;
+  user-select: none;
+}
+.angular-google-map-container {
+  height: 100%;
+  width: 100%;
+}
+.angular-google-map {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.overlay div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #f1f1f1;
+}
+.infowindow {
+  padding: 1em;
+}
+.infowindow a {
+  text-decoration: none;
+}
+.infowindow a:hover {
+  text-decoration: none;
+}
+.infowindow .logo {
+  display: block;
+  width: 140px;
+}
+.infowindow span {
+  display: block;
+  line-height: 1.4;
+}
+.infowindow .batch {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.infowindow .address {
+  margin-bottom: 20px;
+  white-space: pre;
+}
+.infowindow .website img {
+  display: inline-block;
+  width: 32px;
+}
+.infowindow .cburl {
+  margin-left: 10px;
+}
+.infowindow .cburl img {
+  display: inline-block;
+  width: 32px;
+}
+.filter md-select {
+  margin: 0;
+  min-width: 215px;
+}
+@media (max-width: 767px) {
+  .filter {
+    top: 70px;
+    left: 10px;
+    right: auto;
+  }
+}
+.places md-input-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+.places md-input-container .md-input {
+  border: none;
+}
+.places md-input-container.md-input-focused .md-input {
+  border: none;
+}
+.places md-input-container .md-errors-spacer {
+  display: none;
+}
+.unlisted {
+  color: #555;
+}
+.unlisted .scroll-container {
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.unlisted .scroll-container span {
+  display: block;
+}
+.obie {
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.obie img {
+  width: 70px;
+  display: inline-block;
+}
+.obie:focus {
+  outline: none;
+}
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  background: #fff;
+  color: #555;
+  padding: 10px;
+  outline: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.menu .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.menu:focus {
+  outline: none;
+}
+md-toolbar.md-menu-toolbar {
+  background: #fff;
+  color: #555;
+}
+md-toolbar.md-menu-toolbar .logo {
+  max-height: 100%;
+}
+md-select:not([disabled]):focus .md-select-value,
+md-select:not([disabled]):focus .md-select-value.md-select-placeholder,
+md-content {
+  color: #555;
+}
+md-divider {
+  padding: 0 !important;
+}
+.help {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  color: #999;
+}
+.help span {
+  display: block;
+  margin-bottom: 1em;
+}
+.help a {
+  text-decoration: none;
+  color: #999;
+  border-bottom: 1px dotted #999;
+  padding-bottom: 4px;
+}
+.help a:hover {
+  text-decoration: none;
+}
+.credits {
+  font-size: 10px;
+  color: #999;
+}
+.credits a {
+  text-decoration: none;
+  color: #999;
+}

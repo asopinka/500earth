@@ -1,0 +1,16 @@
+{
+  "name": "500map",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.6",
+    "monk": "^4.0.0"
+  }
+}

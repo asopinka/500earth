@@ -1,0 +1,70 @@
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<section class="main" layout="row" flex>
+	<md-sidenav class="md-sidenav-left" md-component-id="left-menu" md-whiteframe="4">
+
+		<md-toolbar class="md-menu-toolbar">
+			<h1 class="md-toolbar-tools"><img src="/img/logo.png" class="logo" /> Earth</h1>
+		</md-toolbar>
+		<md-content layout-padding>
+			<md-divider></md-divider>
+
+			<div class="places">
+				<md-input-container class="md-no-underline" md-no-float>
+				  <input type="text" placeholder="Search an address..." ng-model="query"
+			        		ng-places-autocomplete pa-on-place-ready="locationSelected">
+				</md-input-container>
+			</div>
+
+			<md-divider></md-divider>
+			
+			<div class="filter">
+				<md-select class="md-no-underline" ng-model="selectedBatch" placeholder="Select a batch..." ng-change="batchChanged(selectedBatch)">
+					<md-option ng-value="All">All</md-option>
+					<md-option ng-repeat="batch in batches" ng-value="batch">{{batch}}</md-option>
+				</md-select>
+			</div>
+
+			<md-divider></md-divider>
+
+			<div class="unlisted">
+				<h4>Unmapped Startups</h4>
+				<div class="scroll-container">
+					<span ng-repeat="startup in unmappedStartups">{{startup.startup.name}}</span>
+				</div>
+			</div>
+
+			<div class="help">
+				<span>Missing information? Wrong location?  Let us know and we'll get it fixed ASAP.</span>
+				<span><a href="mailto:info@500.earth">info@500.earth</a></span>
+			</div>
+
+			<div class="credits">
+				<div>Earth icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+			</div>
+		</md-content>
+
+	</md-sidenav>
+
+	<ui-gmap-google-map center="map.center" zoom="map.zoom" options="map.options" events="map.events">
+		<ui-gmap-markers models="mappedStartups" coords="'self'" icon="'icon'" click="markerClick" doCluster="true" modelsbyref="true">
+	    </ui-gmap-markers>
+	    <ui-gmap-window coords="infoWindow.coords" show="infoWindow.visible" options="infoWindow.options" templateUrl="infoWindow.templateUrl" templateParameter="infoWindow.startup"></ui-gmap-window>
+	</ui-gmap-google-map>
+
+	<div class="obie" ng-click="poweredBy()">
+		<img src="/img/obie.png"/> 
+	</div>
+
+	<div class="menu" ng-click="toggleMenu()">
+		<i class="fa fa-bars"></i>
+	</div>
+
+	<div class="overlay" ng-show="isLoading">
+		<div>
+			<span class="fa fa-spin fa-3x fa-circle-o-notch"></span>
+		</div>
+	</div>
+
+</section>
