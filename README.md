@@ -1,5 +1,5 @@
 # 500 Earth
-The global #500Strong community mapped for your viewing pleasure
+The global #500Strong family mapped for your viewing pleasure
 (and in case you want to find local 500 alumni).
   
 ### Install
