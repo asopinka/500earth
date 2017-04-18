@@ -15,7 +15,7 @@ You can also use [yarn](https://yarnpkg.com/en/) instead of [npm](https://www.np
 
 ### Changes
 
-Fork the repo and send a pull request!  All are welcome!  If it's anything major, let us know ahead of time
+Fork the repo and send a pull request!  All are welcome!  If it's anything major, let us know ahead of time.
 
 ### Data Errors
 

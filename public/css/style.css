@@ -110,14 +110,15 @@ section.main {
 }
 .obie {
   position: absolute;
-  bottom: 20px;
-  left: 5px;
-  border-radius: 50%;
+  bottom: 30px;
+  left: 8px;
   cursor: pointer;
+  font-size: 12px;
 }
-.obie img {
-  width: 70px;
+.obie .emoji {
+  height: 17px;
   display: inline-block;
+  vertical-align: bottom;
 }
 .obie:focus {
   outline: none;
@@ -127,8 +128,8 @@ section.main {
   top: 20px;
   left: 20px;
   border-radius: 50%;
-  background: #fff;
-  color: #555;
+  background: #555;
+  color: #fff;
   padding: 10px;
   outline: none;
   height: 30px;
@@ -149,6 +150,7 @@ section.main {
 md-toolbar.md-menu-toolbar {
   background: #fff;
   color: #555;
+  margin-top: 6px;
 }
 md-toolbar.md-menu-toolbar .logo {
   max-height: 100%;

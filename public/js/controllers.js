@@ -86,6 +86,8 @@ angular.module('500map.controllers', ['ngMaterial', 'ngPlacesAutocomplete'])
 
 	$scope.batchChanged = function(val) {
 		filterStartups(val ? val : 'All');
+		$scope.map.center = { latitude: 25, longitude: -10 };
+		$scope.map.zoom = 3;
 		$scope.toggleMenu();
 	};
 
@@ -124,6 +126,7 @@ angular.module('500map.controllers', ['ngMaterial', 'ngPlacesAutocomplete'])
 	$scope.locationSelected = function(err, loc) {
 		$scope.map.center = { latitude: loc.geometry.location.lat(), longitude: loc.geometry.location.lng() };
 		$scope.map.zoom = 12;
+		$scope.toggleMenu();
 	};
 
 	function filterStartups(batch) {
