@@ -1,1 +1,0 @@
-process.env['MONGO_CONNECTION_STRING'] = 'mongodb://admino2:Nua64FWGlmvh6rE7VaYa@ds159998.mlab.com:59998/500map';
